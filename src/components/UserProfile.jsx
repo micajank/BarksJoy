@@ -15,6 +15,10 @@ import Card from 'react-bootstrap/Card'
 // import ProfilePic from './ProfilePic';
 // // import MatchButton from './MatchButton';
 // // import AppHeader from './AppHeader';
+import { Container, Col, Row } from 'reactstrap';
+// import MatchButton from './MatchButton';
+// import AppHeader from './AppHeader';
+
 
 export default function Profile(props) {
     const User = {
@@ -64,8 +68,8 @@ export default function Profile(props) {
             <Card className="profile-card">
                 <Card.Img className="images prof-image"  variant="top" src={User.dogInfo.images.profpic} />
                 <div>
-                    <a href="/profile/emmy/chat"><FontAwesomeIcon color="#d6d6d6" size="4x" className="icons" icon={faTimesCircle} /></a>
-                    <a href="/profile/emmy/chat"><FontAwesomeIcon color="#02D1A3" className="icons" size="4x" icon={faHeart} /></a>
+                    <a href="/chat"><FontAwesomeIcon color="#d6d6d6" size="4x" className="icons" icon={faTimesCircle} /></a>
+                    <a href="/chat"><FontAwesomeIcon color="#02D1A3" className="icons" size="4x" icon={faHeart} /></a>
                 
                 </div>
                 <Card.Body>
